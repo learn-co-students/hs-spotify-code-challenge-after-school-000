@@ -1,6 +1,6 @@
 class Song
   attr_accessor :title, :artist, :popularity
-  # Remember what does attr_accessor actually does?
+  # Remember what attr_accessor does?
   # Write out the reader and writer methods for popularity, playcount, and genre below
 
   ALL_SONGS = []
@@ -35,15 +35,13 @@ class Song
 end
 
 class User
-  attr_accessor :name, :playlist
-
   #What does the initialize method do?
   def initialize(name)
     @name = name
     @playlist = []
   end
 
-  #convert the reader and writer methods below to att_accessors
+  #convert the reader and writer methods below to attr_accessors
   def name=(name)
     @name=name
   end
@@ -56,7 +54,7 @@ class User
     @playlist
   end
 
-  # Write out a method that adds songs to a User's playlist
+  #Write out a method that adds songs to a User's playlist
 end
 
 # Create 3 new instances of Song
